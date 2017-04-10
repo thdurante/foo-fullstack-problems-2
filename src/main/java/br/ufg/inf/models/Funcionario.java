@@ -36,4 +36,10 @@ public class Funcionario {
     public double calculaGanhoAnual() {
         return  this.salario * 12;
     }
+
+    public void mostra() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Salário: " + this.salario);
+        System.out.println("Ganho anual: " + this.calculaGanhoAnual());
+    }
 }

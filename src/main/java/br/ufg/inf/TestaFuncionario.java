@@ -11,7 +11,6 @@ public class TestaFuncionario {
         f1.setSalario(100);
         f1.recebeAumento(50);
 
-        System.out.println("salario atual:" + f1.getSalario());
-        System.out.println("ganho anual:" + f1.calculaGanhoAnual());
+        f1.mostra();
     }
 }
