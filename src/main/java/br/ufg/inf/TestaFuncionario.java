@@ -9,9 +9,7 @@ public class TestaFuncionario {
         f1.setNome("Danilo");
         f1.setSalario(100);
 
-        Funcionario f2 = new Funcionario();
-        f2.setNome("Danilo");
-        f2.setSalario(100);
+        Funcionario f2 = f1;
 
         if (f1 == f2) {
             System.out.println("iguais");
