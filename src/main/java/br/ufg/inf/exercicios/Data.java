@@ -1,4 +1,4 @@
-package br.ufg.inf.models;
+package br.ufg.inf.exercicios;
 
 public class Data {
 
@@ -22,5 +22,9 @@ public class Data {
 
     public int getAno() {
         return ano;
+    }
+
+    public String dataFormatada() {
+        return String.format("%02d", this.dia) + "/" + String.format("%02d", this.mes) + "/" + this.ano;
     }
 }

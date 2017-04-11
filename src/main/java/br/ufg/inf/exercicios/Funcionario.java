@@ -1,4 +1,4 @@
-package br.ufg.inf.models;
+package br.ufg.inf.exercicios;
 
 public class Funcionario {
 
@@ -32,9 +32,6 @@ public class Funcionario {
     public void setDataEntrada(Data dataEntrada) {
         this.dataEntrada = dataEntrada;
     }
-    /*
-    * Outros métodos
-    * */
 
     public void recebeAumento(double aumento) {
         this.salario += aumento;
@@ -48,6 +45,6 @@ public class Funcionario {
         System.out.println("Nome: " + this.nome);
         System.out.println("Salário: " + this.salario);
         System.out.println("Ganho anual: " + this.calculaGanhoAnual());
-        System.out.println("Data de entrada: " + this.dataEntrada.getDia() + "/" + this.dataEntrada.getMes() + "/" + this.dataEntrada.getAno());
+        System.out.println("Data de entrada: " + this.dataEntrada.dataFormatada());
     }
 }
