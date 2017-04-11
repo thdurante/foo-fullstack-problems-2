@@ -5,7 +5,7 @@ public class Funcionario {
     private String nome;
     private String departamento;
     private double salario;
-    private String dataEntrada;
+    private Data dataEntrada;
     private String rg;
     private boolean estaNaEmpresa;
 
@@ -25,6 +25,13 @@ public class Funcionario {
         this.salario = salario;
     }
 
+    public Data getDataEntrada() {
+        return dataEntrada;
+    }
+
+    public void setDataEntrada(Data dataEntrada) {
+        this.dataEntrada = dataEntrada;
+    }
     /*
     * Outros métodos
     * */
@@ -41,5 +48,6 @@ public class Funcionario {
         System.out.println("Nome: " + this.nome);
         System.out.println("Salário: " + this.salario);
         System.out.println("Ganho anual: " + this.calculaGanhoAnual());
+        System.out.println("Data de entrada: " + this.dataEntrada.getDia() + "/" + this.dataEntrada.getMes() + "/" + this.dataEntrada.getAno());
     }
 }
